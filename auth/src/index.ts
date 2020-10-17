@@ -35,6 +35,9 @@ app.use('*', async() => {
 app.use(errorHandler);
 
 const start = () => {
+    if(!process.env.JWT_KEY){
+        throw new Error("JWT_KEY must be defined!");
+    }
     mongoose.connect("mongodb://auth-mongo-srv:27017/auth", {
         useNewUrlParser: true,
         useUnifiedTopology: true,
