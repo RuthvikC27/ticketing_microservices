@@ -42,7 +42,7 @@ router.post("/api/users/signup", [
             jwt: userJwt
         }
 
-        res.status(200).send({ user })
+        res.status(200).send(user)
     })
 
 export { router as signupRouter }
