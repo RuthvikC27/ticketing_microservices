@@ -1,7 +1,7 @@
 
 
-function signUp() {
-    return <form>
+export default function SignUp() {
+    return <form action="#" target="_blank">
         <h1>Sign Up</h1>
         <div className="form-group">
             <label>Email Address</label>
@@ -15,4 +15,8 @@ function signUp() {
     </form>
 }
 
-export default signUp
+// export const config = {
+//     amp: true,
+//   }
+  
+
