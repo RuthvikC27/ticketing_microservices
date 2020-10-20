@@ -1,9 +1,8 @@
 import express, { Request, Response } from 'express';
 import { body } from 'express-validator';
 
-import { validationRequest } from '../middlewares/validate-request';
+import { validationRequest, BadRequestError } from '@rc27tickets/common';
 
-import { BadRequestError } from '../errors/bad-request-error';
 import { User } from '../models/user';
 import jwt from 'jsonwebtoken';
 
