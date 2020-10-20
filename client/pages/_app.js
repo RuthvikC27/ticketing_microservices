@@ -1,9 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import buildClient from '../api/build-client';
+import Headers from '../components/headers';
 
 function AppComponent({ Component, pageProps, currentUser }) {
-  return <div>
-    <h1>Header! {currentUser.email}</h1>
+  return <div className="container">
+    <Headers currentUser={currentUser}/> 
     <Component {...pageProps} />
   </div>
 } 
