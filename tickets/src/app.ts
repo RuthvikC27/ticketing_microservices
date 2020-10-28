@@ -5,6 +5,9 @@ import cookieSession from 'cookie-session';
 
 // ROUTES
 import { createTicketRouter } from './routes/new';
+import { showTicketRouter } from './routes/show';
+import { indexTicketRouter } from './routes/index';
+import { updateTicketRouter } from './routes/update';
 
 import { errorHandler, NotFoundError, currentUser } from '@rc27tickets/common';
 
@@ -20,6 +23,9 @@ app.use(
 );
 
 app.use(createTicketRouter);
+app.use(showTicketRouter);
+app.use(indexTicketRouter);
+app.use(updateTicketRouter);
 
 app.use('*', async () => {
     throw new NotFoundError();
