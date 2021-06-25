@@ -1,0 +1,9 @@
+getting out the nats-streaming-server to localhost in system
+1) make a clusterIP
+2) make a nodeport service
+3) do port forwarding
+
+kubectl get pods
+kubectl port-forward nats-depl-5c6dbf9c4f-pkhnv 4222:4222   (pod)
+                                        port on lap |  port on the pod
+

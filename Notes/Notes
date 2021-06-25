@@ -1,0 +1,13 @@
+we can create different kinds of secret.
+here we are creating generic
+
+This is an example of an imperative command in kubernetes.
+imperative commands are where we run a command to create an actual object.
+It does not list out the password. That is why we are using this.
+Remember the secrets always when doing this.
+
+kubectl create secret generic jwt-secret --from-literal=JWT_KEY=asdf
+kubectl get secrets
+
+Unskipabble warning -
+thisisunsafe

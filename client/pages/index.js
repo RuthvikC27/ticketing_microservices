@@ -15,7 +15,9 @@ Home.getInitialProps = async (context) => {
   const client = buildClient(context);
   const { data } = await client.get("/api/users/currentuser")
 
-  return data;
+  // console.log(data);
+
+  return data
 }
 
 

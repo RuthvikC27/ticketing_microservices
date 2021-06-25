@@ -23,6 +23,8 @@ router.post("/api/users/signup", [
         const { email, password } = req.body;
         const existingUser = await User.findOne({ email });
 
+        console.log(email);
+
         if (existingUser) {
             throw new BadRequestError('Email in use');
         }

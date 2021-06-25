@@ -1,0 +1,11 @@
+- Event based
+ - emit
+ - callbacks
+ - listen
+
+NATS streaming requires us to subscribe to channels. Events are emitted to specific channels.
+
+Our event bus stores events in the memory (default), flat files or in a MySQL/Postgres DB
+
+
+
